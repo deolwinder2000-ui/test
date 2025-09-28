@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" type="text/css" rel="stylesheet"/>
+<title>CSCI 165 - Fall 2025</title>
+
+
+</head>
+<body>
+<!----Requirement 1--->
+
+<h2>Webpage layout must be as given in Assignment</h2>
+<div class="page-border">
+
+<table>
+<tr>
+<td colspan="3" class="header">CSCI 165 -Fall 2025</td>
+
+</tr>
+<tr>
+    <td><img src="..\5981assign1\images\Anmolpreet.jpeg" alt="myphoto" width="100"border="5px  solid black";><p>Anmolpreet Kaur<br>815981</p></td>
+    <td><img src="..\5981assign1\images\images.jpeg" alt="elephant" width="100"border="5px  solid black";></td>
+    <td><img src="..\5981assign1\images\bus.jpg" alt="bus" width="100" border="  5px solid black ";></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr> 
+</table>
+<!-----Requirement 2--->
+<div class="section">
+<div class="buttons">
+
+<button onclick="showImage('../5981assign1/images/Anmol.jpeg')"> Your own photo</button><br><br><br>
+ <button onclick="showImage('../5981assign1/images/tiger.jpeg')">Tiger</button> 
+ </div> 
+ <div class="image-box"> <img id="displayImg" src="" alt="Selected Image"> 
+ </div>
+ </div>
+<!----Requirement 3--->
+<div class="hometown">
+<p class="p1"> My hometown is Jagraon, a historic city in Punjab, India.</p>
+<p class="p2"> It is known as the birthplace of freedom fighter Lala Lajpat Rai.</p>
+<p class="p3"> People  here are warm, hardworking, and proud of their traditions.</p>
+</div>
+
+</div>
+
+
+<script>
+function showImage(imagePath) {
+  document.getElementById("displayImg").src = imagePath;
+}
+</script>
+</body>
+</html>
+
+
